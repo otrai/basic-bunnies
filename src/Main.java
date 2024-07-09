@@ -10,6 +10,8 @@ public class Main {
         displayInfo(myBunny);
         changeName(myBunny, "Jack");
         displayInfo(myBunny);
+        feed(myBunny, "bread", "burger", "shake");
+        play(myBunny2);
 }
 
     public static Bunny makeBunny(String name, int age) {
@@ -29,6 +31,19 @@ public class Main {
 
     public static void changeName(Bunny bunny, String name) {
         bunny.name = name;
+    }
+
+    public static void feed(Bunny bunny, String appetizer, String main_course, String desert) {
+        bunny.eat(appetizer);
+        bunny.eat(main_course);
+        bunny.eat(desert);
+    }
+
+    public static void play(Bunny bunny) {
+        bunny.hop();
+        bunny.eat("lettuce");
+        bunny.eat("carrots");
+        bunny.sleep();
     }
 
 
