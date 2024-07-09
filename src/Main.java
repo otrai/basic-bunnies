@@ -6,6 +6,8 @@ public class Main {
         Bunny myBunny2 = makeBunny("Trix", 6);
         displayInfo(myBunny);
         displayInfo(myBunny2);
+        haveBirthday(myBunny);
+        displayInfo(myBunny);
 }
 
     public static Bunny makeBunny(String name, int age) {
@@ -17,6 +19,10 @@ public class Main {
 
     public static void displayInfo(Bunny bunny) {
         System.out.println(bunny.name + " is a " + bunny.age + " year old bunny.");
+    }
+
+    public static void haveBirthday(Bunny bunny) {
+        bunny.age += 1;
     }
 
 
