@@ -8,6 +8,8 @@ public class Main {
         displayInfo(myBunny2);
         haveBirthday(myBunny);
         displayInfo(myBunny);
+        changeName(myBunny, "Jack");
+        displayInfo(myBunny);
 }
 
     public static Bunny makeBunny(String name, int age) {
@@ -24,6 +26,12 @@ public class Main {
     public static void haveBirthday(Bunny bunny) {
         bunny.age += 1;
     }
+
+    public static void changeName(Bunny bunny, String name) {
+        bunny.name = name;
+    }
+
+
 
 
 }
